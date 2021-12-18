@@ -1,2 +1,3 @@
-# learning-go
-go
+## Learning
+# Go
+Jon Bodner
