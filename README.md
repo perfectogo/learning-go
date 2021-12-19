@@ -1,7 +1,7 @@
 ## Learning
 # Go
 
-# The Go Comand
+# The go Comand
 
 go koplab tashqi ***"development tools"*** ega bo'lib, biz bu ***"development tools"*** ga go comandasi orqali murojat qilamiz
 
