@@ -1,26 +1,35 @@
-## Learning
-# Go
-
-# 1. The go Comand
-
-go koplab tashqi ***"development tools"*** ega bo'lib, biz bu ***"development tools"*** ga go comandasi orqali murojat qilamiz
-***"development tools"*** compiler, code formater, linter, dependency manager, test runner, va boshqalarni oz ichiga oladi
-# <br>
-## go run *and* go build:
-#### go run name.go
-#### go build name.go *or* go build -o flag name.go
-# <br>
-## Getting Third-Party Go Tools:
-#### go install <src>
-# <br>
-## Formatting Your Code:
-#### go fmt name.go
-# <br>
-## Linting and Vetting:
-#### golint name.go
-#### go vet name.go
-# <br>
-## Makefiles:
-#### make 
-# <br>
-# 2. Primitive Types and Declarations
+<header>
+  <h1>Learning <br> <strong>Go</strong></h1>
+</header>
+<main>
+  <hr>
+  <section>
+    <h2>1. The go Comand</h2>
+    <ul>
+      <li>
+        <h3>go run and go build:</h3>
+        <b>go run name.go<br>go build name.go<br>go build -o flag name.go</b>
+      </li>
+      <li>
+        <h3>Getting Third-Party Go Tools:</h3>
+        <b>go install</b>
+      </li>
+      <li>
+        <h3>Formatting Your Code:</h3>
+        <b>go fmt name.go</b>
+      </li>
+      <li>
+        <h3>Linting and Vetting:</h3>
+        <b>golint name.go<br>go vet name.go</b>
+      </li>  
+      <li>
+        <h3>Makefiles:</h3>
+        <b>make</b>
+      </li>
+    </ul>
+  </section>
+  <hr>
+  <section>
+    <h2>2. Primitive Types and Declarations</h2>
+  </section>
+</main>
