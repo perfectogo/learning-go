@@ -12,7 +12,7 @@
       </li>
       <li>
         <h3>Getting Third-Party Go Tools:</h3>
-        <b>go install</b>
+        <b>go install src</b>
       </li>
       <li>
         <h3>Formatting Your Code:</h3>
