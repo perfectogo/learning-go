@@ -598,6 +598,49 @@ In Go, the strings package provides various methods that can be used to perform 
 ### 13.4 Go map
 In Go, the map data structure stores elements in key/value pairs. Here, keys are unique identifiers that are associated with each value on a map.
 
-Create a map in Golang
+* Create a map in Golang
 
 The syntax to create a Go map is:
+```
+    langSt := map[string]float32{"Golang": 85, "Java": 80, "Python": 81}
+```
+
+* Access Values of a Map in Golang
+
+We can access the value of a map by using the corresponding key. For example,
+
+```
+   fmt.Println(langSt["Golang"]) 
+```
+
+* Change value of a map in Golang
+
+To change the value of a map, we can directly assign a new value to the corresponding key. For example,
+```
+    langSt["Golang"]=100
+```
+
+* Add Element of Go Map Element
+So far, we have created a map with a predefined set of elements. However, we can also add elements to a map.
+
+To add an element, we can assign a new value along with a new key. For example,
+```
+    langSt["C++"] = 90
+```
+
+* Delete Element of Go Map Element
+
+To delete an element of the map, we can use the delete() function. For example
+```
+    delete(langSt, "Python")
+```
+## Go struct
+In Go programming, a struct is used to store variables of different data types. For example,
+
+Suppose we want to store the name and age of a person. We can create two variables: name and age and store value.
+
+However, suppose we want to store the same information of multiple people.
+
+In this case, creating variables for a person might be a tedious task. We can create a struct that stores the name and age to overcome this.
+
+And, we can use this same struct for every person.
