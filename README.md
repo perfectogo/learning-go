@@ -469,3 +469,135 @@ Just like regular variables, we can also return pointers from a function. For ex
 ## 13. Go Data Structures
 
 ### 13.1 Go Array
+An array is a collection of similar types of data. For example,
+#### 13.1.1 Creating an array in Go
+
+Here is a syntax to declare an array in Golang.
+```
+    var array_variable = [size]datatype{elements of array}
+```    
+#### 13.1.2 Accessing array elements in Golang
+
+In Go, each element in an array is associated with a number. The number is known as an array index.
+We can access elements of an array using the index number (0, 1, 2 …). For example,
+```
+    progeammingLanguages := [3]string{"C++", "Go", "Java"}
+
+    // access element at index 0
+    fmt.Println(progeammingLanguages[0]) // C++
+
+    // access element at index 2
+    fmt.Println(progeammingLanguages[2]) // Java
+```
+#### 13.1.3 Initialize an Array in Golang
+
+We can also use index numbers to initialize an array. For example,
+```
+    numbera[3] = 7
+```
+* ***Initialize specific elements of an array***
+
+In Golang, we can also initialize the specific element of the array during the declaration. For example,
+```
+    // to initialize the elements of index 0 and 3 only
+    numbers := [5]int{0: 7, 3: 9}
+
+    fmt.Println(numbers)
+```
+#### 13.1.4 Find the length of an Array in Go
+
+In Golang, we can use the len() function to find the number of elements present inside the array. For example,
+
+#### 13.1.5 Multidimensional array in Golang
+
+Arrays we have mentioned till now are called one-dimensional arrays. However, we can declare multidimensional arrays in Golang.
+
+A multidimensional array is an array of arrays. That is, each element of a multidimensional array is an array itself. For example,
+
+```
+    arrayInteger := [2][2]int{{1, 2}, {3, 4}}
+
+    // accessing the values of 2d array
+    for i := 0; i < 2; i++ {
+        for j := 0; j < 2; j++ {
+            fmt.Println(arrayInteger[i][j])
+        }
+    }
+```
+### 13.2. Go Slice
+In Go, slice a collection of similar types of data, just like arrays.
+
+However, unlike arrays, slice doesn't have a fixed size. We can add or remove elements from the array.
+
+* Create slice
+```
+    numbers := []int{1, 2, 3, 4, 5, 6, 7}
+```
+* **Slice Functions**
+
+    * **append()** - adds element to a slice
+    * **copy()** - copy elements of one slice to another
+    * **Equals()** - compares two slices
+    * **len()** - find the length of a slice
+
+### 13.3 Go String
+A string is a sequence of characters. For example, "Golang" is a string that includes characters: G, o, l, a, n, g.
+
+We use double quotes to represent strings in Go. For example,
+```
+    var word string = "salom"
+```
+or ce can use use backtick:
+```
+    var word string = `salom`
+```
+#### 13.3.1 Access Characters of String in Go
+
+We know that a string is a sequence of characters. Hence, we can access individual characters of a string.
+
+Just like the Go array, we use index numbers to access string characters. For example,
+
+```
+    var word string = "salom"
+
+    fmt.Println(word[0]) // s
+```
+#### 13.3.2 Find the length of a string
+
+In Go, we use the len() function to find the length of a string. For example,
+```
+    var word string = "hello, world"
+
+    fmt.Println(len(word)) // 12
+```
+
+#### 13.3.4 Join Two Strings Together
+
+In Go, we can use the + operator to join (concatenates) strings together. For example,
+
+```
+    var word1 string = "hello"
+    var word2 string = "world!"
+
+    sentences = word1 + ", " + word2
+
+    fmt.Prinln(sentence)
+```
+#### 13.3.5 Golang String Methods
+
+In Go, the strings package provides various methods that can be used to perform different operations on strings.
+
+* **Functions  Descriptions**
+    * **Compare()** - compares two strings
+    * **Contains()** - checks if a substring is present inside a string
+    * **Replaces()** - replaces a substring with another substring
+    * **ToLower()** - converts a string to lowercase
+    * **ToUpper()** - converts a string to uppercase
+    * **Split()** - splits a string into multiple substrings
+
+### 13.4 Go map
+In Go, the map data structure stores elements in key/value pairs. Here, keys are unique identifiers that are associated with each value on a map.
+
+Create a map in Golang
+
+The syntax to create a Go map is:
