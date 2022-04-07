@@ -644,3 +644,106 @@ However, suppose we want to store the same information of multiple people.
 In this case, creating variables for a person might be a tedious task. We can create a struct that stores the name and age to overcome this.
 
 And, we can use this same struct for every person.
+
+* Declare Go Struct
+The syntax to declare a struct in Go is:
+```
+    type StructName struct {
+        // struct definition
+    }
+```
+* Struct instances
+A struct definition is just a blueprint. To use a struct, we need to create an instance of it. For example,
+
+```
+    var instanceName1 Structname
+```
+
+* Accessing a struct in Golang
+We can access individual elements of a struct using the struct instances. For example,
+
+```
+    type Area struct {
+        a uint
+        b uint
+    }
+
+    func main() {
+        area1 := Area{3, 5}
+        fmt.Println(area1.a)
+        fmt.Println(area1.b)
+    }
+```
+
+## Goroutines
+In Go, we use goroutines to create concurrent programs. Concurrent programs are able to run multiple processes at the same time.
+
+Suppose we have a program that has two independent functions. In normal programs, two functions will be executed synchronously. That is, the second function is executed only after the execution of the first function.
+
+However, since both functions are independent, it would be efficient if we could execute both functions together asynchronously.
+
+For this, we use goroutines that help us to achieve concurrency in programming.
+
+* Create Goroutine
+We can convert a regular function to a goroutine by calling the function using the go keyword. For example,
+
+## Go Packages
+A package is a container that contains various functions to perform specific tasks. For example, the math package includes the Sqrt() function to perform the square root of a number.
+
+While working on big projects, we have to deal with a large amount of code, and writing everything together in the same file will make our code look messy. Instead, we can separate our code into multiple files by keeping the related code together in packages.
+
+Now, we can use the package whenever we need it in our projects. This way we can also reuse our code.
+
+### Golang main() package
+Every Go program starts with the main package. Whenever the compiler sees the main package, it treats the program as the executable code.
+
+### Import package in Golang
+In our previous example, we have used the code
+```
+    import "fmt"
+```
+Here, we have used the import keyword to import the fmt package.
+### Golang fmt Package
+In Go, the fmt package provides functions to format our input/output data. For example, the fmt.Println() function prints the data to the output screen.
+
+### math package in Go
+The math package provides various functions to perform mathematical operations. For example, math.Sqrt() finds the square root of a number.
+
+### Go strings package
+The strings package provides functions to perform operations on UTF-8 encoded strings. For example, strings.Contains() checks if the string contains a substring.
+
+### Go Custom Package
+So far, we have been using packages that are already defined inside the Go library. However, Go programming allows us to create our own custom packages and use them just like the predefined packages.
+
+1. Create Custom Package
+
+To create a custom package, we first need to create a new file and declare the package. For example,
+```
+    package calc
+```
+2. Now, we can create functions inside the file. For example,
+```
+    package calculator
+
+    // create add function
+    func Add(n1, n2 int) int {
+        return n1 + n`2
+    }
+```
+
+3. 2. Importing Custom Package
+
+Now, we can import the custom package in our main file.
+
+```
+    package main
+    
+    import (
+        "fmt"
+        "calculator"
+    )
+
+    func main() {
+        fmt.Println(calculator.Add(4, 5))
+    }
+```
